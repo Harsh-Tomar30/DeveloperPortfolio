@@ -1,0 +1,23 @@
+==============================================
+  System Information Report
+  Name: Harsh Tomar | Roll No: 2601730006
+  Date: Wed Nov 25 07:39:31 UTC 2026
+==============================================
+
+--- CPU ---
+Model : Intel(R) Core(TM) 7 240H
+Cores : 16
+
+--- Memory ---
+Total : 7.6Gi
+Used  : 550Mi
+
+--- Top 3 Processes by CPU Usage ---
+USER       PID   %CPU  COMMAND
+systemd+ 78 0.0 /usr/lib/systemd/systemd-resolved
+syslog 190 0.0 /usr/sbin/rsyslogd
+root 706 0.0 /init
+
+==============================================
+  Report generated successfully.
+==============================================
