@@ -1,0 +1,59 @@
+===== ls -la ~ =====
+total 96
+drwxr-x--- 10 harsh harsh  4096 Nov 25 05:35 .
+drwxr-xr-x  3 root  root   4096 Oct  4 12:31 ..
+-rw-------  1 harsh harsh 22207 Nov 25 05:47 .bash_history
+-rw-r--r--  1 harsh harsh   220 Oct  4 12:31 .bash_logout
+-rw-r--r--  1 harsh harsh  3771 Oct  4 12:31 .bashrc
+drwxr-x---  4 harsh harsh  4096 Oct  4 12:34 .cache
+drwxr-x---  4 harsh harsh  4096 Oct 19 13:31 .config
+-rw-r--r--  1 harsh harsh    98 Nov 13 14:40 .gitconfig
+drwxr-xr-x  2 harsh harsh  4096 Oct  4 12:34 .landscape
+-rw-------  1 harsh harsh    20 Nov 24 07:00 .lesshst
+drwx------  3 harsh harsh  4096 Oct 23 15:06 .local
+-rw-r--r--  1 harsh harsh     0 Nov 25 05:34 .motd_shown
+-rw-r--r--  1 harsh harsh   807 Oct  4 12:31 .profile
+drwxr-xr-x  8 harsh harsh  4096 Nov 25 05:35 DeveloperPortfolio
+drwxr-xr-x  3 harsh harsh  4096 Nov 19 05:32 Postman
+drwxr-xr-x  5 harsh harsh  4096 Nov 19 06:09 cse103_lab
+drwxr-xr-x  3 harsh harsh  4096 Nov 24 07:33 developer-portfolio
+-rw-r--r--  1 harsh harsh  5645 Nov 19 05:41 users.json
+
+===== ps aux | head -10 =====
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  2.1  0.1  24152 15352 ?        Ss   07:29   0:00 /sbin/init
+root           2  0.0  0.0   3820  2524 hvc0     Sl+  07:29   0:00 /init
+root           3  0.0  0.0   3680  2220 hvc0     S+   07:29   0:00 init-watcher
+root           7  0.0  0.0   3820  2296 hvc0     Sl+  07:29   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          47  0.4  0.3  58764 30080 ?        S<s  07:29   0:00 /usr/lib/systemd/systemd-journald
+systemd+      78  0.1  0.1  22416 14492 ?        Ss   07:29   0:00 /usr/lib/systemd/systemd-resolved
+root          86  0.6  0.1  34880 12160 ?        Ss   07:29   0:00 /usr/lib/systemd/systemd-udevd
+root         109  0.0  0.0   2888  1948 ?        Ss   07:29   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+root         110  0.0  0.0   4472  3088 ?        Ss   07:29   0:00 /usr/sbin/cron -f -P
+
+===== df -h =====
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.8G     0  3.8G   0% /usr/lib/modules/6.18.58.1-microsoft-standard-WSL2
+/dev/sdb         97M   97M     0 100% /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2
+none            3.8G  4.0K  3.8G   1% /mnt/wsl
+drivers         953G   90G  863G  10% /usr/lib/wsl/drivers
+/dev/sdd       1007G  1.7G  954G   1% /
+none            3.8G   32K  3.8G   1% /mnt/wslg
+none            3.8G     0  3.8G   0% /usr/lib/wsl/lib
+rootfs          3.8G  3.4M  3.8G   1% /init
+none            3.8G  560K  3.8G   1% /run
+none            3.8G     0  3.8G   0% /run/lock
+none            3.8G     0  3.8G   0% /run/shm
+none            3.8G   80K  3.8G   1% /mnt/wslg/versions.txt
+none            3.8G   80K  3.8G   1% /mnt/wslg/doc
+C:\             953G   90G  863G  10% /mnt/c
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           3.8G     0  3.8G   0% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           776M   12K  776M   1% /run/user/1000
+
+===== free -h =====
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       564Mi       6.6Gi       4.1Mi       596Mi       7.0Gi
+Swap:          2.0Gi          0B       2.0Gi
